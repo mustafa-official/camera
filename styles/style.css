@@ -26,6 +26,7 @@ header {
     width: 1200px;
     max-width: 85%;
     margin: 0 auto;
+    
 
 }
 
@@ -33,6 +34,7 @@ header {
     color: #3A3A3A;
     font-size: 1.5rem;
     font-weight: 700;
+    width: 50%;
 }
 
 header ul li a {
@@ -44,12 +46,12 @@ header ul li a {
 
 header ul li {
     list-style: none;
-    margin-right: 30px;
+    /* margin-right: 30px; */
 }
 
-header ul li:last-child {
+/* header ul li:last-child {
     margin-right: 0;
-}
+} */
 
 nav {
     display: flex;
@@ -59,6 +61,8 @@ nav {
 
 nav ul {
     display: flex;
+    width: 50%;
+    justify-content: space-between;
 
 }
 
@@ -134,15 +138,17 @@ nav ul {
 /* responsive with media-queries  */
 
 @media only screen and (max-width: 576px) {
-    nav ul{
-        display: none;
-    }
+    
     .banner-section{
         flex-direction: column-reverse;
         gap: 20px;
     }
     .banner-img img{
-        width: 100%;
+        width: 80%;
+    }
+    .banner-img{
+        justify-content: center;
+        display: flex;
     }
     .banner-content{
         text-align: center;
@@ -158,19 +164,27 @@ nav ul {
         flex-wrap: wrap;
         gap: 5px;
     }
+    nav, nav ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
     
 }
 
 @media only screen and (min-width: 576px) and (max-width: 992px){
-    nav ul{
-        display: none;
+    nav, nav ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
     .banner-section{
         flex-direction: column-reverse;
         gap: 20px;
     }
     .banner-img img{
-        width: 100%;
+        width: 90%;
     }
     .banner-content{
         text-align: center;

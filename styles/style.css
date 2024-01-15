@@ -374,11 +374,6 @@ footer {
         gap: 10px;
     }
 
-    .popular-item {
-        width: 80%;
-        margin: 0 auto;
-    }
-
     .popular-main-item {
         grid-template-columns: 1fr;
     }
